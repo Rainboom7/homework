@@ -1,0 +1,14 @@
+apply plugin: 'application'
+application {
+    mainClassName="Application"
+    run {
+        standardInput = System.in
+    }
+
+}
+
+
+dependencies {
+    implementation project(':models')
+    implementation 'com.google.code.gson:gson:2.8.5'
+}
